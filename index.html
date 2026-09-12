@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>CHUTIKAN HONGTHONG | Full Stack Developer & UI/UX Designer Portfolio</title>
+  <meta name="description" content="แฟ้มสะสมผลงาน (Portfolio) ส่วนตัวของ CHUTIKAN HONGTHONG (ชุติกาญจน์ หงษ์ทอง) - นักพัฒนาเว็บไซต์ Full Stack Developer และ UI/UX Designer สร้างสรรค์เว็บแอปพลิเคชันที่ทันสมัย สวยงาม และทรงพลัง">
+  <meta name="keywords" content="Portfolio, Full Stack Developer, Web Developer, UI UX Designer, HTML5, CSS3, JavaScript, Bootstrap 5, Frontend, Backend">
+  <meta name="author" content="CHUTIKAN HONGTHONG">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- Ambient Background Blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home" id="brandLogo">
+        <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
+        <span>Chutikan<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <!-- Right controls: Theme Toggle & Hamburger -->
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button id="themeToggleBtn" class="btn-theme-toggle" type="button" aria-label="สลับธีม Dark/Light Mode" title="สลับโหมด">
+          <i id="themeIcon" class="bi bi-sun-fill text-warning"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse order-lg-2 justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" id="navHome"><i class="bi bi-house-door me-1 d-lg-none"></i> หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="navAbout"><i class="bi bi-person me-1 d-lg-none"></i> เกี่ยวกับ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" id="navSkills"><i class="bi bi-stars me-1 d-lg-none"></i> ทักษะ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies" id="navHobbies"><i class="bi bi-palette me-1 d-lg-none"></i> งานอดิเรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience" id="navExp"><i class="bi bi-mortarboard me-1 d-lg-none"></i> การศึกษา & ประสบการณ์</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="navContact"><i class="bi bi-envelope me-1 d-lg-none"></i> ติดต่อ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse flex-lg-row g-4 g-lg-5">
+        
+        <!-- Hero Text Content -->
+        <div class="col-lg-7">
+          <div class="hero-greeting">
+            <span class="status-dot"></span>
+            <span>ยินดีต้อนรับสู่ Portfolio ของฉัน</span>
+          </div>
+          
+          <h1 class="hero-title">
+            สวัสดีค่ะ ฉันคือ <br>
+            <span class="text-gradient">CHUTIKAN HONGTHONG</span>
+          </h1>
+
+          <!-- Typing Text Animation -->
+          <div class="hero-typing-wrap">
+            ฉันเป็น <span id="typingText" class="typing-text">นักศึกษาวิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+          </div>
+
+          <p class="hero-description">
+            <span class="d-block fw-bold text-main mb-1 fs-5">นักศึกษาวิทยาลัยอาชีวศึกษานครศรีธรรมราช | Web Developer</span>
+            <strong>“เปลี่ยนไอเดียให้กลายเป็นเว็บแอปพลิเคชันที่ใช้งานได้จริงอย่างสมบูรณ์แบบ”</strong><br>
+            ฉันเป็นนักศึกษาวิทยาลัยอาชีวศึกษานครศรีธรรมราช สาขาธุรกิจดิจิทัล ผู้สนใจด้านการพัฒนาเว็บไซต์และเทคโนโลยีดิจิทัล ชอบเรียนรู้เกี่ยวกับการทำเว็บไซต์และเทคโนโลยีใหม่ ๆ และสนุกกับการสร้างผลงานเพื่อพัฒนาทักษะของตัวเองให้ดียิ่งขึ้น
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-buttons">
+            <a href="#experience" class="btn-primary-custom" id="heroBtnEducation">
+              <i class="bi bi-mortarboard-fill"></i> ดูประวัติการศึกษา
+            </a>
+            <a href="#contact" class="btn-outline-custom" id="heroBtnContact">
+              <i class="bi bi-chat-dots-fill"></i> ติดต่อร่วมงาน
+            </a>
+            <a href="#about" class="btn-outline-custom" id="heroBtnResume" title="ดูประวัติส่วนตัว">
+              <i class="bi bi-person-bounding-box"></i> ข้อมูลส่วนตัว
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="text-secondary small fw-bold me-2">ติดตามผลงาน:</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub" id="socialGithub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn" id="socialLinkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:chutikan.nab@nvc.ac.th" class="social-icon-btn" title="Email (chutikan.nab@nvc.ac.th)" id="socialEmail">
+              <i class="bi bi-envelope-at-fill"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook" id="socialFacebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Display -->
+        <div class="col-lg-5 text-center">
+          <div class="hero-image-wrap">
+            <div class="avatar-backdrop-glow"></div>
+            
+            <div class="avatar-frame">
+              <img src="assets/profile/avatar.jpg" alt="CHUTIKAN HONGTHONG Full Stack Developer" class="avatar-img" id="heroAvatar">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top">
+              <span class="status-dot"></span>
+              <span>Available for Hire</span>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <i class="bi bi-mortarboard-fill text-warning fs-5"></i>
+              <span>วอศ.นครศรีธรรมราช</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section-py">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-person-badge-fill"></i> ข้อมูลส่วนตัว</span>
+        <h2 class="section-title">เกี่ยวกับ<span class="text-gradient">ตัวฉัน</span></h2>
+        <p class="section-subtitle">ทำความรู้จักกับแนวคิด ประสบการณ์ และความมุ่งมั่นในการสร้างสรรค์ซอฟต์แวร์คุณภาพ</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch mb-5">
+        <!-- Biography Card -->
+        <div class="col-lg-7">
+          <div class="glass-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-primary bg-opacity-10 border border-primary border-opacity-25 text-primary small fw-bold mb-3">
+                <i class="bi bi-mortarboard"></i> นักศึกษาวิทยาลัยอาชีวศึกษานครศรีธรรมราช | Web Developer
+              </div>
+
+              <h3 class="fs-4 fw-bold mb-3 text-gradient">
+                “เปลี่ยนไอเดียให้กลายเป็นเว็บแอปพลิเคชันที่ใช้งานได้จริงอย่างสมบูรณ์แบบ”
+              </h3>
+
+              <p class="text-secondary mb-3">
+                สวัสดีค่ะ ฉันชื่อ <strong>ชุติกาญจน์ หงษ์ทอง (CHUTIKAN HONGTHONG)</strong> ฉันเป็นนักศึกษาวิทยาลัยอาชีวศึกษานครศรีธรรมราช สาขาธุรกิจดิจิทัล ผู้สนใจด้านการพัฒนาเว็บไซต์และเทคโนโลยีดิจิทัล
+              </p>
+
+              <p class="text-secondary mb-4">
+                ฉันชอบเรียนรู้เกี่ยวกับการทำเว็บไซต์และเทคโนโลยีใหม่ ๆ และสนุกกับการนำความรู้ที่เรียนมาลองสร้างผลงานต่าง ๆ เพื่อพัฒนาทักษะของตัวเองให้ดีขึ้น
+              </p>
+
+              <!-- Personal Info List (👩💻 About Me) -->
+              <h4 class="fs-6 fw-bold text-main mb-3">
+                <i class="bi bi-person-lines-fill text-primary me-2"></i>👩💻 ข้อมูลส่วนตัว (About Me)
+              </h4>
+
+              <div class="row g-2 mb-4">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-person-badge text-primary"></i>
+                    <span><strong>ชื่อ:</strong> ชุติกาญจน์ หงษ์ทอง</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-alphabet text-info"></i>
+                    <span><strong>ชื่อภาษาอังกฤษ:</strong> CHUTIKAN HONGTHONG</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-building-gear text-success"></i>
+                    <span><strong>สาขา:</strong> ธุรกิจดิจิทัล</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-mortarboard-fill text-purple"></i>
+                    <span><strong>สถาบัน:</strong> วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-geo-alt-fill text-danger"></i>
+                    <span><strong>ที่อยู่:</strong> นครศรีธรรมราช ประเทศไทย</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-envelope-at-fill text-info"></i>
+                    <span><strong>อีเมล:</strong> chutikan.nab@nvc.ac.th</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-telephone-fill text-warning"></i>
+                    <span><strong>เบอร์โทร:</strong> 062-519-2637</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    <span><strong>สถานะ:</strong> ยินดีรับงาน Full-time & Freelance</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-translate text-warning"></i>
+                    <span><strong>ภาษา:</strong> ไทย (Native), อังกฤษ (Fluent)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Career Goal Card -->
+            <div class="career-goal-box mt-3">
+              <div class="d-flex align-items-start gap-3">
+                <div class="career-goal-icon">
+                  <i class="bi bi-rocket-takeoff-fill"></i>
+                </div>
+                <div>
+                  <h5 class="fs-6 fw-bold text-main mb-1">🚀 เป้าหมายการทำงาน (Career Goal)</h5>
+                  <p class="text-secondary small mb-0">
+                    ต้องการนำความรู้ด้าน <strong>ธุรกิจดิจิทัล เทคโนโลยี และการพัฒนาเว็บไซต์</strong> มาประยุกต์ใช้ในการสร้างเว็บไซต์และเว็บแอปพลิเคชันที่สามารถนำไปใช้งานได้จริง พร้อมพัฒนาทักษะอย่างต่อเนื่องและเติบโตไปพร้อมกับองค์กร
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlight Profile Cards -->
+        <div class="col-lg-5">
+          <div class="row g-3 h-100">
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                <div class="fs-5 fw-bold text-main mb-1">วอศ.นครศรีฯ</div>
+                <div class="stat-label">วิทยาลัยอาชีวศึกษา</div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-icon"><i class="bi bi-award-fill"></i></div>
+                <div class="stat-number" data-target="5" data-suffix=" ระดับ">0</div>
+                <div class="stat-label">ประวัติการศึกษา</div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="fs-5 fw-bold text-main mb-1">นครศรีธรรมราช</div>
+                <div class="stat-label">ประเทศไทย</div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-icon"><i class="bi bi-patch-check-fill"></i></div>
+                <div class="fs-5 fw-bold text-main mb-1">ยินดีรับงาน</div>
+                <div class="stat-label">Full-time & Freelance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Interests Section -->
+  <section id="skills" class="section-py">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-lightbulb-fill"></i> ทักษะและความสนใจ</span>
+        <h2 class="section-title">💡 Skills & <span class="text-gradient">Interests</span></h2>
+        <p class="section-subtitle">ทักษะ ความคิดสร้างสรรค์ และความเชี่ยวชาญด้านสื่อดิจิทัลและเทคโนโลยีที่ฉันให้ความสำคัญในการสร้างสรรค์ผลงาน</p>
+      </div>
+
+      <!-- 4 Core Skills & Interests Cards -->
+      <div class="row g-4 mb-5">
+        <!-- 1. การออกแบบสื่อด้วย Canva -->
+        <div class="col-lg-6 col-md-6">
+          <div class="interest-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="interest-icon-box icon-canva m-0">
+                <i class="bi bi-palette-fill"></i>
+              </div>
+              <span class="badge bg-pink-subtle text-pink px-3 py-1 rounded-pill small fw-semibold">
+                Canva Design
+              </span>
+            </div>
+            <h3 class="interest-title">🎨 การออกแบบสื่อด้วย Canva</h3>
+            <p class="interest-desc">
+              สร้างสรรค์งานกราฟิก สื่อประชาสัมพันธ์ โปสเตอร์ แบนเนอร์ อินโฟกราฟิก และสื่อโซเชียลมีเดียด้วย Canva ได้อย่างสวยงาม มีเอกลักษณ์ จัดวางองค์ประกอบ สัดส่วน และจับคู่โทนสีได้อย่างมืออาชีพ
+            </p>
+            <div class="interest-tags mt-auto pt-3 d-flex flex-wrap gap-1">
+              <span class="hobby-tag-pill pill-pink">#CanvaDesign</span>
+              <span class="hobby-tag-pill">#GraphicMedia</span>
+              <span class="hobby-tag-pill pill-indigo">#Infographic</span>
+              <span class="hobby-tag-pill">#SocialMedia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. การถ่ายและตัดต่อวิดีโอ -->
+        <div class="col-lg-6 col-md-6">
+          <div class="interest-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="interest-icon-box icon-video m-0">
+                <i class="bi bi-camera-reels-fill"></i>
+              </div>
+              <span class="badge bg-info-subtle text-info px-3 py-1 rounded-pill small fw-semibold">
+                Video Production
+              </span>
+            </div>
+            <h3 class="interest-title">🎬 การถ่ายและตัดต่อวิดีโอ</h3>
+            <p class="interest-desc">
+              วางแผน Storyboard ลำดับภาพ และตัดต่อคลิปวิดีโอสำหรับทุกแพลตฟอร์มดิจิทัล (Reels, TikTok, YouTube) ผสานเทคนิคการตัดต่อ การใส่เสียงดนตรีประกอบ เอฟเฟกต์ และคุมจังหวะภาพที่ดึงดูดความสนใจผู้ชม
+            </p>
+            <div class="interest-tags mt-auto pt-3 d-flex flex-wrap gap-1">
+              <span class="hobby-tag-pill pill-cyan">#VideoEditing</span>
+              <span class="hobby-tag-pill">#ShortFormVideo</span>
+              <span class="hobby-tag-pill pill-indigo">#Storytelling</span>
+              <span class="hobby-tag-pill">#ContentCreation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. การใช้ AI ช่วยสร้างสื่อ -->
+        <div class="col-lg-6 col-md-6">
+          <div class="interest-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="interest-icon-box icon-ai m-0">
+                <i class="bi bi-robot"></i>
+              </div>
+              <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill small fw-semibold">
+                Smart Creative
+              </span>
+            </div>
+            <h3 class="interest-title">🤖 การใช้ AI ช่วยสร้างสื่อ</h3>
+            <p class="interest-desc">
+              ประยุกต์ใช้เทคโนโลยีปัญญาประดิษฐ์ (Generative AI & AI Tools) ในการคิดไอเดียคอนเทนต์ เขียนแคปชัน สร้างภาพประกอบ และผลิตสื่อมัลติมีเดีย ช่วยเพิ่มความรวดเร็ว คุณภาพ และขยายขอบเขตความคิดสร้างสรรค์
+            </p>
+            <div class="interest-tags mt-auto pt-3 d-flex flex-wrap gap-1">
+              <span class="hobby-tag-pill pill-emerald">#GenerativeAI</span>
+              <span class="hobby-tag-pill">#PromptDesign</span>
+              <span class="hobby-tag-pill pill-indigo">#AITools</span>
+              <span class="hobby-tag-pill">#CreativeAI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. การถ่ายภาพและวิดีโอ -->
+        <div class="col-lg-6 col-md-6">
+          <div class="interest-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="interest-icon-box icon-photo m-0">
+                <i class="bi bi-camera-fill"></i>
+              </div>
+              <span class="badge bg-warning-subtle text-warning px-3 py-1 rounded-pill small fw-semibold">
+                Visual Capture
+              </span>
+            </div>
+            <h3 class="interest-title">📷 การถ่ายภาพและวิดีโอ</h3>
+            <p class="interest-desc">
+              เข้าใจหลักการจัดองค์ประกอบภาพ มุมมอง ทิศทางแสง และการบันทึกภาพนิ่ง/ภาพเคลื่อนไหวคุณภาพสูง เพื่อสื่อสารอารมณ์ ถ่ายทอดเรื่องราว และสร้างสรรค์ภาพลักษณ์ที่น่าประทับใจ
+            </p>
+            <div class="interest-tags mt-auto pt-3 d-flex flex-wrap gap-1">
+              <span class="hobby-tag-pill pill-amber">#Photography</span>
+              <span class="hobby-tag-pill">#Videography</span>
+              <span class="hobby-tag-pill pill-pink">#VisualArt</span>
+              <span class="hobby-tag-pill">#Lighting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Stack Proficiency Grid -->
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="bi bi-window-fullscreen"></i></div>
+              <h3 class="fs-5 fw-bold m-0">Frontend Toolkit</h3>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-filetype-html text-danger"></i> HTML5 & Semantic Elements</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-filetype-css text-primary"></i> CSS3, Responsive & Flex/Grid</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-bootstrap-fill text-purple"></i> Bootstrap 5 & Modern UI</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-filetype-js text-warning"></i> JavaScript (ES6+) & DOM</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="bi bi-diagram-3-fill"></i></div>
+              <h3 class="fs-5 fw-bold m-0">Digital Business & Web</h3>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-cart-check-fill text-success"></i> E-Commerce Architecture</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-graph-up-arrow text-primary"></i> Digital Marketing & Analytics</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-search text-warning"></i> SEO & Core Web Vitals</span>
+                <span class="skill-percent">86%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="86%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-hdd-network text-info"></i> RESTful API Integration</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="bi bi-camera-reels-fill"></i></div>
+              <h3 class="fs-5 fw-bold m-0">Creative Media & AI</h3>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-palette-fill text-pink"></i> การออกแบบสื่อด้วย Canva</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-film text-info"></i> การถ่ายและตัดต่อวิดีโอ</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-robot text-success"></i> การใช้ AI ช่วยสร้างสื่อ</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="bi bi-camera-fill text-warning"></i> การถ่ายภาพและวิดีโอ</span>
+                <span class="skill-percent">86%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="86%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies & Lifestyle Section -->
+  <section id="hobbies" class="section-py">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-palette-fill"></i> ไลฟ์สไตล์ & งานอดิเรก</span>
+        <h2 class="section-title">งานอดิเรก & <span class="text-gradient">กิจกรรมยามว่าง</span></h2>
+        <p class="section-subtitle">เมื่อไม่ได้เขียนโค้ด กิจกรรมที่ช่วยเติมเต็มพลังสร้างสรรค์ สมาธิ และความสุขในชีวิตประจำวันของฉัน</p>
+      </div>
+
+      <!-- Main Featured Hobbies Grid (4 Categories) -->
+      <div class="row g-4">
+        <!-- Hobby 1: Gaming -->
+        <div class="col-lg-6">
+          <div class="hobby-card">
+            <div class="hobby-img-wrap">
+              <img src="assets/hobbies/gaming.jpg" alt="เล่นเกม Gaming & Esports" class="hobby-img">
+              <div class="hobby-icon-badge">
+                <i class="bi bi-controller"></i>
+              </div>
+            </div>
+            <div class="hobby-body">
+              <h3 class="hobby-title">
+                🎮 เล่นเกม (Gaming & Esports)
+              </h3>
+              <div class="hobby-stat">
+                <i class="bi bi-lightning-charge-fill text-warning"></i>
+                <span>Tactical Strategy, RPG & Team Co-op</span>
+              </div>
+              <p class="hobby-desc">
+                การเล่นเกมเป็นมากกว่าความบันเทิง แต่เป็นเวทีฝึกฝน <strong>Strategic Thinking</strong> การวางแผนแก้ไขปัญหาเฉพาะหน้าภายใต้ข้อจำกัด และการสื่อสารประสานงานเป็นทีมอย่างมีประสิทธิภาพ ช่วยให้นำแนวคิดเชิงตรรกะมาประยุกต์ใช้กับการคิดวิเคราะห์และแก้ปัญหาต่าง ๆ
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag-pill">#PCGaming</span>
+                <span class="hobby-tag-pill pill-indigo">#StrategyGames</span>
+                <span class="hobby-tag-pill pill-cyan">#TeamCoordination</span>
+                <span class="hobby-tag-pill">#ProblemSolving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 2: Music -->
+        <div class="col-lg-6">
+          <div class="hobby-card">
+            <div class="hobby-img-wrap">
+              <img src="assets/hobbies/music.jpg" alt="ฟังเพลง Music & Sound" class="hobby-img">
+              <div class="hobby-icon-badge">
+                <i class="bi bi-headphones"></i>
+              </div>
+            </div>
+            <div class="hobby-body">
+              <h3 class="hobby-title">
+                🎧 ฟังเพลง (Music & Inspiration)
+              </h3>
+              <div class="hobby-stat">
+                <i class="bi bi-soundwave text-info"></i>
+                <span>Relaxation, Mood Booster & Creative Ideas</span>
+              </div>
+              <p class="hobby-desc">
+                ชอบฟังเพลงในเวลาว่าง เพราะช่วยให้รู้สึกผ่อนคลาย และบางครั้งก็ใช้เพลงเป็นไอเดียในการทำคอนเทนต์
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag-pill">#MusicLovers</span>
+                <span class="hobby-tag-pill pill-indigo">#Relaxation</span>
+                <span class="hobby-tag-pill pill-cyan">#ContentIdea</span>
+                <span class="hobby-tag-pill">#CreativeMood</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 3: Movies & Series -->
+        <div class="col-lg-6">
+          <div class="hobby-card">
+            <div class="hobby-img-wrap">
+              <img src="assets/hobbies/movies.jpg" alt="ดูหนัง & ซีรีส์ Movies & Series" class="hobby-img">
+              <div class="hobby-icon-badge">
+                <i class="bi bi-film"></i>
+              </div>
+            </div>
+            <div class="hobby-body">
+              <h3 class="hobby-title">
+                🎬 ดูหนัง & ซีรีส์ (Movies & Series)
+              </h3>
+              <div class="hobby-stat">
+                <i class="bi bi-play-btn-fill text-danger"></i>
+                <span>Storytelling, Cinematography & Entertainment</span>
+              </div>
+              <p class="hobby-desc">
+                ชอบดูหนังและซีรีส์เพื่อความสนุก และบางครั้งก็ได้ไอเดียเกี่ยวกับการเล่าเรื่อง การถ่ายภาพ และการทำคอนเทนต์
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag-pill">#CinemaLovers</span>
+                <span class="hobby-tag-pill pill-indigo">#Storytelling</span>
+                <span class="hobby-tag-pill pill-cyan">#VisualArts</span>
+                <span class="hobby-tag-pill">#SeriesAddict</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 4: Travel & Photography -->
+        <div class="col-lg-6">
+          <div class="hobby-card">
+            <div class="hobby-img-wrap">
+              <img src="assets/hobbies/travel.jpg" alt="ท่องเที่ยว & ถ่ายรูป Travel & Photography" class="hobby-img">
+              <div class="hobby-icon-badge">
+                <i class="bi bi-camera-fill"></i>
+              </div>
+            </div>
+            <div class="hobby-body">
+              <h3 class="hobby-title">
+                ✈️ ท่องเที่ยว & ถ่ายรูป (Travel & Photography)
+              </h3>
+              <div class="hobby-stat">
+                <i class="bi bi-geo-alt-fill text-success"></i>
+                <span>Exploration, Landscape & Memory Captures</span>
+              </div>
+              <p class="hobby-desc">
+                ชอบออกไปเที่ยวและถ่ายรูปสถานที่ต่าง ๆ เพราะได้เปิดประสบการณ์ใหม่ ๆ และได้เก็บภาพความทรงจำ
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag-pill">#TravelLifestyle</span>
+                <span class="hobby-tag-pill pill-indigo">#Photography</span>
+                <span class="hobby-tag-pill pill-cyan">#NewExperience</span>
+                <span class="hobby-tag-pill">#KeepMemories</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="section-py position-relative">
+    <div id="education" class="anchor-offset" aria-hidden="true"></div>
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-tag"><i class="bi bi-mortarboard-fill"></i> เส้นทางการเรียนรู้ & ประสบการณ์</span>
+        <h2 class="section-title">ประวัติการศึกษา & <span class="text-gradient">ประสบการณ์</span></h2>
+        <p class="section-subtitle">เส้นทางการศึกษาที่สั่งสมองค์ความรู้และทักษะ จากระดับพื้นฐานสู่สายวิชาชีพและระดับปริญญาตรี</p>
+      </div>
+
+      <!-- Segmented Journey Controls (Tabs & Order Switcher) -->
+      <div class="journey-controls-bar">
+        <div class="journey-tabs-wrapper">
+          <button class="journey-tab-btn active" id="tabEducationBtn" type="button">
+            <i class="bi bi-mortarboard-fill me-2"></i>ประวัติการศึกษา (5 ระดับชั้น)
+          </button>
+          <button class="journey-tab-btn" id="tabExperienceBtn" type="button">
+            <i class="bi bi-briefcase-fill me-2"></i>ประสบการณ์ & ผลงาน
+          </button>
+        </div>
+
+        <!-- Sort Order Toggle -->
+        <button id="eduSortToggleBtn" class="btn-sort-toggle" type="button" title="สลับลำดับการแสดงผล">
+          <i class="bi bi-arrow-down-up text-primary"></i>
+          <span id="eduSortLabel">แสดงล่าสุดก่อน (ปริญญาตรี &rarr; ประถม)</span>
+        </button>
+      </div>
+
+      <!-- Tab Pane 1: Education Journey (5 Levels) -->
+      <div id="journey-education" class="journey-pane">
+        <div class="education-timeline" id="educationTimelineContainer">
+
+          <!-- Level 5: ระดับปริญญาตรี (กำลังศึกษา - Highlighted) -->
+          <div class="edu-timeline-item" data-order="5">
+            <div class="edu-marker">
+              <div class="edu-node node-bachelor">
+                <i class="bi bi-mortarboard-fill"></i>
+                <div class="pulse-indicator-ring"></div>
+              </div>
+            </div>
+            <div class="edu-card is-current">
+              <div class="edu-card-top">
+                <span class="edu-level-pill level-bachelor">
+                  <i class="bi bi-star-fill text-warning me-1"></i> ระดับปริญญาตรี
+                </span>
+                <span class="edu-status-pill status-current-badge">
+                  <span class="status-pulse-dot"></span> กำลังศึกษาระดับปริญญาตรี
+                </span>
+              </div>
+              <h3 class="edu-degree-title">ระดับปริญญาตรี (กำลังศึกษา)</h3>
+              <div class="edu-major-info">
+                <i class="bi bi-laptop me-1"></i> สาขาวิชาธุรกิจดิจิทัล (Digital Business)
+              </div>
+              <div class="edu-institution-row">
+                <div class="edu-institution-name">
+                  <i class="bi bi-building text-primary"></i> วิทยาลัยอาชีวศึกษานครศรีธรรมราช
+                </div>
+                <div class="edu-location-tag">
+                  <i class="bi bi-geo-alt-fill text-danger"></i> อ.เมือง จ.นครศรีธรรมราช
+                </div>
+              </div>
+              <p class="edu-description">
+                กำลังศึกษาระดับปริญญาตรี มุ่งเน้นการพัฒนาระบบธุรกิจดิจิทัล, การวิเคราะห์ข้อมูล, E-Commerce Platform, เทคโนโลยีสารสนเทศสมัยใหม่ และการพัฒนาเว็บแอปพลิเคชันอย่างมืออาชีพ
+              </p>
+              <div class="edu-pill-tags">
+                <span class="edu-pill"><i class="bi bi-mortarboard text-purple me-1"></i>ระดับปริญญาตรี</span>
+                <span class="edu-pill"><i class="bi bi-circle-fill text-success small me-1"></i>กำลังศึกษาอยู่</span>
+                <span class="edu-pill"><i class="bi bi-code-slash text-primary me-1"></i>ธุรกิจดิจิทัล & เว็บ</span>
+                <span class="edu-pill"><i class="bi bi-building text-info me-1"></i>วอศ.นครศรีธรรมราช</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 4: ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) -->
+          <div class="edu-timeline-item" data-order="4">
+            <div class="edu-marker">
+              <div class="edu-node node-pws">
+                <i class="bi bi-award-fill"></i>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <span class="edu-level-pill level-pws">
+                  <i class="bi bi-award me-1"></i> ระดับ ปวส.
+                </span>
+                <span class="edu-status-pill status-completed-badge">
+                  <i class="bi bi-check-circle-fill text-success me-1"></i> สำเร็จการศึกษา (Graduated)
+                </span>
+              </div>
+              <h3 class="edu-degree-title">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h3>
+              <div class="edu-institution-row">
+                <div class="edu-institution-name">
+                  <i class="bi bi-building text-info"></i> วิทยาลัยอาชีวศึกษานครศรีธรรมราช
+                </div>
+                <div class="edu-location-tag">
+                  <i class="bi bi-geo-alt-fill text-danger"></i> อ.เมือง จ.นครศรีธรรมราช
+                </div>
+              </div>
+              <p class="edu-description">
+                ศึกษาและฝึกฝนทักษะวิชาชีพระดับสูง ด้านการจัดการระบบเทคโนโลยีสารสนเทศ การวิเคราะห์และออกแบบระบบ การจัดการฐานข้อมูล และการประยุกต์ใช้เทคโนโลยีในองค์กรธุรกิจ
+              </p>
+              <div class="edu-pill-tags">
+                <span class="edu-pill"><i class="bi bi-award text-cyan me-1"></i>วุฒิการศึกษา ปวส.</span>
+                <span class="edu-pill"><i class="bi bi-check2-circle text-success me-1"></i>สำเร็จการศึกษา</span>
+                <span class="edu-pill"><i class="bi bi-building text-info me-1"></i>วอศ.นครศรีธรรมราช</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 3: ระดับประกาศนียบัตรวิชาชีพ (ปวช.) -->
+          <div class="edu-timeline-item" data-order="3">
+            <div class="edu-marker">
+              <div class="edu-node node-pwc">
+                <i class="bi bi-journal-code"></i>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <span class="edu-level-pill level-pwc">
+                  <i class="bi bi-journal-text me-1"></i> ระดับ ปวช.
+                </span>
+                <span class="edu-status-pill status-completed-badge">
+                  <i class="bi bi-check-circle-fill text-success me-1"></i> สำเร็จการศึกษา (Graduated)
+                </span>
+              </div>
+              <h3 class="edu-degree-title">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+              <div class="edu-institution-row">
+                <div class="edu-institution-name">
+                  <i class="bi bi-building text-success"></i> วิทยาลัยอาชีวศึกษานครศรีธรรมราช
+                </div>
+                <div class="edu-location-tag">
+                  <i class="bi bi-geo-alt-fill text-danger"></i> อ.เมือง จ.นครศรีธรรมราช
+                </div>
+              </div>
+              <p class="edu-description">
+                ปูรากฐานทักษะวิชาชีพด้านคอมพิวเตอร์และธุรกิจ การใช้งานโปรแกรมประยุกต์สำนักงาน การเขียนโปรแกรมเบื้องต้น ทักษะการแก้ปัญหา และการปฏิบัติงานจริงในสายงานอาชีวศึกษา
+              </p>
+              <div class="edu-pill-tags">
+                <span class="edu-pill"><i class="bi bi-journal-code text-emerald me-1"></i>วุฒิการศึกษา ปวช.</span>
+                <span class="edu-pill"><i class="bi bi-check2-circle text-success me-1"></i>สำเร็จการศึกษา</span>
+                <span class="edu-pill"><i class="bi bi-building text-info me-1"></i>วอศ.นครศรีธรรมราช</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 2: ระดับมัธยมศึกษาตอนต้น -->
+          <div class="edu-timeline-item" data-order="2">
+            <div class="edu-marker">
+              <div class="edu-node node-secondary">
+                <i class="bi bi-bank"></i>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <span class="edu-level-pill level-secondary">
+                  <i class="bi bi-backpack me-1"></i> ระดับมัธยมศึกษาตอนต้น
+                </span>
+                <span class="edu-status-pill status-completed-badge">
+                  <i class="bi bi-check-circle-fill text-success me-1"></i> สำเร็จการศึกษา (Graduated)
+                </span>
+              </div>
+              <h3 class="edu-degree-title">ชั้นมัธยมศึกษาปีที่ 1–3</h3>
+              <div class="edu-institution-row">
+                <div class="edu-institution-name">
+                  <i class="bi bi-building-check text-warning"></i> โรงเรียนเจริญวิทย์
+                </div>
+                <div class="edu-location-tag">
+                  <i class="bi bi-geo-alt-fill text-danger"></i> จ.นครศรีธรรมราช
+                </div>
+              </div>
+              <p class="edu-description">
+                การศึกษาขั้นพื้นฐานระดับมัธยมศึกษาตอนต้น เสริมสร้างกระบวนการคิดวิเคราะห์ ความรู้รอบด้านทางวิทยาศาสตร์ คณิตศาสตร์ ภาษาศาสตร์ และการร่วมกิจกรรมทางสังคมและโรงเรียน
+              </p>
+              <div class="edu-pill-tags">
+                <span class="edu-pill"><i class="bi bi-book text-warning me-1"></i>ชั้น ม.1–3</span>
+                <span class="edu-pill"><i class="bi bi-check2-circle text-success me-1"></i>สำเร็จการศึกษา</span>
+                <span class="edu-pill"><i class="bi bi-building text-secondary me-1"></i>โรงเรียนเจริญวิทย์</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level 1: ระดับประถมศึกษา -->
+          <div class="edu-timeline-item" data-order="1">
+            <div class="edu-marker">
+              <div class="edu-node node-primary">
+                <i class="bi bi-book-half"></i>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <span class="edu-level-pill level-primary">
+                  <i class="bi bi-flower1 me-1"></i> ระดับประถมศึกษา
+                </span>
+                <span class="edu-status-pill status-completed-badge">
+                  <i class="bi bi-check-circle-fill text-success me-1"></i> สำเร็จการศึกษา (Graduated)
+                </span>
+              </div>
+              <h3 class="edu-degree-title">ชั้นประถมศึกษาปีที่ 1–6</h3>
+              <div class="edu-institution-row">
+                <div class="edu-institution-name">
+                  <i class="bi bi-building-check text-pink"></i> โรงเรียนเจริญวิทย์
+                </div>
+                <div class="edu-location-tag">
+                  <i class="bi bi-geo-alt-fill text-danger"></i> จ.นครศรีธรรมราช
+                </div>
+              </div>
+              <p class="edu-description">
+                จุดเริ่มต้นแห่งการเรียนรู้ ปลูกฝังพื้นฐานการศึกษา ระเบียบวินัย ความคิดริเริ่มสร้างสรรค์ คุณธรรม จริยธรรม และการพัฒนาทักษะชีวิตเป็นรากฐานที่มั่นคง
+              </p>
+              <div class="edu-pill-tags">
+                <span class="edu-pill"><i class="bi bi-bookmark-star text-pink me-1"></i>ชั้น ป.1–6</span>
+                <span class="edu-pill"><i class="bi bi-check2-circle text-success me-1"></i>สำเร็จการศึกษา</span>
+                <span class="edu-pill"><i class="bi bi-building text-secondary me-1"></i>โรงเรียนเจริญวิทย์</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab Pane 2: Experience & Projects Timeline (Preserved) -->
+      <div id="journey-experience" class="journey-pane d-none">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="timeline">
+
+              <!-- Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2024 - ปัจจุบัน</span>
+                  <h3 class="timeline-role">นักศึกษาสาขาธุรกิจดิจิทัล (Digital Business)</h3>
+                  <div class="timeline-org">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                  <p class="timeline-desc">
+                    ศึกษากระบวนการธุรกิจดิจิทัล, การวิเคราะห์ข้อมูล, E-Commerce Platform, และการประยุกต์ใช้เทคโนโลยีสมัยใหม่เพื่อขับเคลื่อนโมเดลธุรกิจยุคดิจิทัล
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2023 - ปัจจุบัน</span>
+                  <h3 class="timeline-role">Web Developer & UI/UX Designer (Projects)</h3>
+                  <div class="timeline-org">Portfolio & Self-Driven Projects</div>
+                  <p class="timeline-desc">
+                    สร้างสรรค์ผลงานพัฒนาเว็บไซต์และเว็บแอปพลิเคชันที่รองรับการใช้งานบนทุกอุปกรณ์ (Responsive Design), ออกแบบ UI/UX ให้ใช้งานง่าย สวยงาม และเน้นการเขียน Clean Code
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2022 - 2023</span>
+                  <h3 class="timeline-role">Digital Technology & Web Skills Foundation</h3>
+                  <div class="timeline-org">Self-Learning & Continuous Improvement</div>
+                  <p class="timeline-desc">
+                    ศึกษาพื้นฐานเทคโนโลยีเว็บ HTML5, CSS3, JavaScript, Bootstrap 5, SEO, Web Accessibility และ Performance Optimization อย่างต่อเนื่อง
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-py">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-chat-heart-fill"></i> ความคิดเห็น</span>
+        <h2 class="section-title">สิ่งที่เพื่อนร่วมงาน & <span class="text-gradient">ลูกค้ากล่าวถึง</span></h2>
+        <p class="section-subtitle">ความประทับใจและผลตอบรับจริงจากการร่วมงานในโปรเจกต์ต่างๆ</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="quote-card">
+            <div>
+              <div class="quote-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">
+                "คุณชุติกาญจน์ เป็นนักพัฒนาที่มีความเข้าใจทั้งเรื่องความสวยงามของดีไซน์และโครงสร้างโค้ดที่สะอาด โปรเจกต์ E-commerce ที่ทำร่วมกันเสร็จตรงเวลา และโหลดเร็วมากอย่างน่าประทับใจ"
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar-placeholder">SP</div>
+              <div>
+                <div class="author-name">Somchai Prasert</div>
+                <div class="author-role">Product Manager, Nova Tech</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="quote-card">
+            <div>
+              <div class="quote-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">
+                "การสื่อสารดีเยี่ยม แก้ไขปัญหาได้รวดเร็ว และเข้าใจโจทย์ธุรกิจได้อย่างลึกซึ้ง ระบบ Dashboard ที่ทำให้ช่วยเพิ่มประสิทธิภาพการทำงานของทีมเราได้มากกว่า 40%"
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar-placeholder">KT</div>
+              <div>
+                <div class="author-name">Kanya Theerawan</div>
+                <div class="author-role">Founder, Aura Analytics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-py">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-send-fill"></i> ร่วมงานกัน</span>
+        <h2 class="section-title">ติดต่อ<span class="text-gradient">พูดคุย</span></h2>
+        <p class="section-subtitle">มีโปรเจกต์ใหม่ ต้องการสร้างเว็บไซต์ หรือมีข้อซักถาม? สามารถส่งข้อความมาพูดคุยกันได้เลยครับ</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Contact Information Cards -->
+        <div class="col-lg-5">
+          <div class="glass-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="fs-4 fw-bold mb-3">ช่องทางการติดต่อ</h3>
+              <p class="text-secondary mb-4">
+                ฉันยินดีรับฟังข้อเสนอและพร้อมเป็นส่วนหนึ่งในการขับเคลื่อนโปรเจกต์ของคุณให้ประสบความสำเร็จ
+              </p>
+
+              <a href="mailto:chutikan.nab@nvc.ac.th" class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-info-title">อีเมล (Email)</div>
+                  <div class="contact-info-val">chutikan.nab@nvc.ac.th</div>
+                </div>
+              </a>
+
+              <a href="tel:0625192637" class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-info-title">เบอร์โทรศัพท์ (Phone)</div>
+                  <div class="contact-info-val">062-519-2637</div>
+                </div>
+              </a>
+
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-info-title">ที่อยู่ (Location)</div>
+                  <div class="contact-info-val">นครศรีธรรมราช ประเทศไทย</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25">
+              <div class="text-secondary small fw-bold mb-2">ติดตามโซเชียลมีเดีย:</div>
+              <div class="d-flex gap-2">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Interactive Form -->
+        <div class="col-lg-7">
+          <div class="glass-card h-100">
+            <h3 class="fs-4 fw-bold mb-3">ส่งข้อความถึงฉัน</h3>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-custom" id="contactName" placeholder="ชื่อของคุณ" required>
+                    <label for="contactName"><i class="bi bi-person me-1"></i> ชื่อ - นามสกุล *</label>
+                    <div class="invalid-feedback">กรุณากรอกชื่อของคุณ</div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-custom" id="contactEmail" placeholder="name@example.com" required>
+                    <label for="contactEmail"><i class="bi bi-envelope me-1"></i> อีเมลของคุณ *</label>
+                    <div class="invalid-feedback">กรุณากรอกอีเมลที่ถูกต้อง</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-custom" id="contactSubject" placeholder="หัวข้อ" required>
+                    <label for="contactSubject"><i class="bi bi-chat-left-text me-1"></i> หัวข้อเรื่อง *</label>
+                    <div class="invalid-feedback">กรุณาระบุหัวข้อเรื่อง</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control form-control-custom" id="contactMessage" placeholder="รายละเอียดข้อความ" style="height: 140px" required></textarea>
+                    <label for="contactMessage"><i class="bi bi-pencil-square me-1"></i> รายละเอียดข้อความ *</label>
+                    <div class="invalid-feedback">กรุณากรอกข้อความของคุณ</div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" id="btnSubmitForm" class="btn-primary-custom w-100 justify-content-center py-3">
+                    <i class="bi bi-send-fill"></i> ส่งข้อความทันที (Send Message)
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a class="navbar-brand justify-content-center" href="#home">
+          <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
+          <span>Chutikan<span class="text-gradient">.dev</span></span>
+        </a>
+      </div>
+      <p class="text-secondary small mb-3">
+        สร้างสรรค์ด้วยความใส่ใจในรายละเอียด | พัฒนาด้วย <strong>HTML5, CSS3, Bootstrap 5 & JavaScript</strong>
+      </p>
+      <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+        <a href="#home" class="text-secondary text-decoration-none small hover-underline">หน้าแรก</a>
+        <span class="text-muted">•</span>
+        <a href="#about" class="text-secondary text-decoration-none small hover-underline">เกี่ยวกับ</a>
+        <span class="text-muted">•</span>
+        <a href="#skills" class="text-secondary text-decoration-none small hover-underline">ทักษะ</a>
+
+        <span class="text-muted">•</span>
+        <a href="#hobbies" class="text-secondary text-decoration-none small hover-underline">งานอดิเรก</a>
+        <span class="text-muted">•</span>
+        <a href="#experience" class="text-secondary text-decoration-none small hover-underline">การศึกษา & ประสบการณ์</a>
+        <span class="text-muted">•</span>
+        <a href="#contact" class="text-secondary text-decoration-none small hover-underline">ติดต่อ</a>
+      </div>
+      <p class="text-muted small mb-0">
+        &copy; 2026 CHUTIKAN HONGTHONG. สงวนลิขสิทธิ์ทุกประการ.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Toast Notification for Contact Form -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div id="contactToast" class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-transparent text-main border-bottom border-secondary border-opacity-25">
+        <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+        <strong class="me-auto">ส่งข้อความสำเร็จ</strong>
+        <small class="text-muted">เมื่อสักครู่</small>
+        <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="toastMessage">
+        ขอบคุณที่ติดต่อเข้ามาครับ! ผมจะติดต่อกลับหาคุณโดยเร็วที่สุด
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" type="button" aria-label="เลื่อนขึ้นด้านบนสุด" title="เลื่อนขึ้นด้านบน">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3.3 Bundle JS (with Popper) (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
